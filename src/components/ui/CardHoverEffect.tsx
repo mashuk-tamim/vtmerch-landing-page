@@ -35,11 +35,11 @@ export const CardHoverEffect = ({
 								initial={{ opacity: 0 }}
 								animate={{
 									opacity: 1,
-									transition: { duration: 0.15 },
+									transition: { duration: 0.10 },
 								}}
 								exit={{
 									opacity: 0,
-									transition: { duration: 0.15, delay: 0.2 },
+									transition: { duration: 0.10, delay: 0.1 },
 								}}
 							/>
 						)}
@@ -74,7 +74,7 @@ export const Card = ({
 	return (
 		<div
 			className={cn(
-				"rounded-2xl h-full w-full overflow-hidden bg-white border border-transparent  group-hover:border-red-primary relative z-20 text-[#060606]",
+				"rounded-2xl h-full w-full overflow-hidden bg-white border border-transparent  relative z-20 text-[#060606]",
 				className
 			)}
 		>

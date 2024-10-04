@@ -7,7 +7,7 @@ import HeroCard from "./ui/HeroCard";
 
 export default function Hero() {
 	return (
-		<section className={`w-screen bg-[#ea2127]`}>
+		<section className="w-screen bg-[#ea2127]">
 			<div className="max-w-7xl mx-auto p-10">
 				<h1 className="uppercase text-8xl text-[#f27a7d] font-actOfRejection">
 					future looks brights!
@@ -17,7 +17,7 @@ export default function Hero() {
 						initial={{ x: "0%" }}
 						animate={{ x: "-100%" }}
 						transition={{
-							duration: 10,
+							duration: 30,
 							repeat: Infinity,
 							repeatType: "loop",
 							repeatDelay: 0,
@@ -33,7 +33,7 @@ export default function Hero() {
 						initial={{ x: "0%" }}
 						animate={{ x: "-100%" }}
 						transition={{
-							duration: 10,
+							duration: 30,
 							repeat: Infinity,
 							repeatType: "loop",
 							repeatDelay: 0,
