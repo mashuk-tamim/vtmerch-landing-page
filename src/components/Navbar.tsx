@@ -13,7 +13,7 @@ export default function Navbar() {
 					</h1>
 				</div>
 				<div>
-					<GiHamburgerMenu className="text-4xl"/>
+					<GiHamburgerMenu className="text-4xl text-white"/>
 				</div>
 			</div>
 		</nav>

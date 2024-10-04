@@ -4,7 +4,6 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import signature from "@/assets/img/pat-signature White 1.png";
 import book1 from "@/assets/img/choose_your_enemies_wisely.png";
 import book2 from "@/assets/img/your_next_five_moves.png";
-import patrick from "@/assets/img/patrick.png";
 
 export default function Book() {
 	return (

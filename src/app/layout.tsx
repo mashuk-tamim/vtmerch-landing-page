@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { montserrat, inter, actOfRejection } from "@/lib/fonts";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
 	title: "vtmerch.com",
@@ -19,7 +20,8 @@ export default function RootLayout({
 				className={`${montserrat.variable} ${inter.variable} ${actOfRejection.variable} antialiased`}
       >
         <Navbar/>
-				{children}
+        {children}
+        <Footer/>
 			</body>
 		</html>
 	);

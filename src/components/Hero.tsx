@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { shirts } from "@/mockData/shirts";
-import HeroCard from "./ui/HeroCard";
+import HeroCard from "./ui/hero-card";
 
 
 export default function Hero() {
