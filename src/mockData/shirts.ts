@@ -2,9 +2,9 @@ import img1 from "@/assets/img/slider1.png";
 import img2 from "@/assets/img/slider2.jpeg";
 import img3 from "@/assets/img/slider3.png";
 import img4 from "@/assets/img/slider4.png";
-import { ShirtProps } from "@/types/hero.shirts";
+import { CardTypes } from "@/types/shirts";
 
-export const shirts: ShirtProps[] = [
+export const shirts: CardTypes[] = [
 	{
 		id: 1,
 		title: "Green Army Active Short Sleeve",

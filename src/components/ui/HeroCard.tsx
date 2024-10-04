@@ -1,7 +1,7 @@
-import { ShirtProps } from "@/types/hero.shirts";
+import { CardTypes } from "@/types/shirts";
 import Image from "next/image";
 
-const Card = ({ shirt }: { shirt: ShirtProps }) => {
+const HeroCard = ({ shirt }: { shirt: CardTypes }) => {
 	return (
 		<div className="space-y-2 mx-2">
 			<Image
@@ -20,4 +20,4 @@ const Card = ({ shirt }: { shirt: ShirtProps }) => {
 	);
 };
 
-export default Card;
+export default HeroCard;

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { shirts } from "@/mockData/hero.shirts";
-import Card from "./Card";
+import { shirts } from "@/mockData/shirts";
+import HeroCard from "./ui/HeroCard";
 
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
 						className="flex flex-shrink-0 justify-between"
 					>
 						{shirts.map((shirt) => {
-							return <Card key={shirt.id} shirt={shirt} />;
+							return <HeroCard key={shirt.id} shirt={shirt} />;
 						})}
 					</motion.div>
 					<motion.div
@@ -42,7 +42,7 @@ export default function Hero() {
 						className="flex flex-shrink-0 justify-between"
 					>
 						{shirts.map((shirt) => {
-							return <Card key={shirt.id} shirt={shirt} />;
+							return <HeroCard key={shirt.id} shirt={shirt} />;
 						})}
 					</motion.div>
 				</div>

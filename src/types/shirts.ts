@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export type ShirtProps = {
+export type CardTypes = {
 	id: number;
 	title: string;
 	recentPrice: string;
