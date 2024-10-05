@@ -8,8 +8,8 @@ import { Button } from "./ui/button";
 
 export default function Book() {
 	return (
-		<section className="w-screen bg-[#111111] max-w-8xl mx-auto px-5 lg:px-10 py-10 lg:py-20 font-montserrat">
-			<div className="flex flex-col md:flex-row justify-between">
+		<section className="w-screen bg-[#111111] max-w-8xl mx-auto px-5 md:px-10 lg:px-20 py-10 lg:py-20 font-montserrat">
+			<div className="flex flex-col md:flex-row justify-between items-center">
 				<div className="uppercase w-full md:w-1/2">
 					<h1 className="text-xl lg:text-4xl font-bold text-white">
 						Patrick Bet-David&apos;s
@@ -26,7 +26,7 @@ export default function Book() {
 						className="w-2/3 md:w-[80%]"
 					/>
 				</div>
-				<div className="flex justify-center items-center gap-2 md:gap-4 w-full md:w-1/2">
+				<div className="flex justify-center items-center gap-2 md:gap-4 w-full md:w-1/2 py-10">
 					<div className="w-1/2">
 						<Image
 							src={book1}
