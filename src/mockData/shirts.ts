@@ -1,7 +1,8 @@
-import img1 from "@/assets/img/slider1.png";
-import img2 from "@/assets/img/slider2.jpeg";
-import img3 from "@/assets/img/slider3.png";
-import img4 from "@/assets/img/slider4.png";
+import shirt1 from "@/assets/img/slider1.jpeg";
+import shirt2 from "@/assets/img/slider2.png";
+import shirt3 from "@/assets/img/slider3.jpeg";
+import shirt4 from "@/assets/img/slider4.png";
+import shirt5 from "@/assets/img/slider5.png";
 import { CardTypes } from "@/types/shirts";
 
 export const shirts: CardTypes[] = [
@@ -10,34 +11,34 @@ export const shirts: CardTypes[] = [
 		title: "Green Army Active Short Sleeve",
 		recentPrice: "34.95",
 		previousPrice: "39.95",
-		img: img1,
+		img: shirt1,
 	},
 	{
 		id: 2,
 		title: "Green Army Active Short Sleeve",
 		recentPrice: "34.95",
 		previousPrice: "39.95",
-		img: img2,
+		img: shirt2,
 	},
 	{
 		id: 3,
 		title: "Green Army Active Short Sleeve",
 		recentPrice: "34.95",
 		previousPrice: "39.95",
-		img: img3,
+		img: shirt3,
 	},
 	{
 		id: 4,
 		title: "Green Army Active Short Sleeve",
 		recentPrice: "34.95",
 		previousPrice: "39.95",
-		img: img2,
+		img: shirt4,
 	},
 	{
 		id: 5,
 		title: "Green Army Active Short Sleeve",
 		recentPrice: "34.95",
 		previousPrice: "39.95",
-		img: img4,
+		img: shirt5,
 	},
 ];

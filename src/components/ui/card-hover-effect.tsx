@@ -52,12 +52,14 @@ export const CardHoverEffect = ({
 								alt={item.title}
 								className="w-full rounded-xl"
 							/>
-							<CardTitle>{item.title}</CardTitle>
-							<div className="flex gap-4">
-								<CardDescription>${item.previousPrice}</CardDescription>
-								<CardDescription>
-									$<del>{item.previousPrice}</del>
-								</CardDescription>
+							<div className="p-1 lg:px-2 lg:py-1">
+								<CardTitle>{item.title}</CardTitle>
+								<div className="flex gap-4">
+									<CardDescription>${item.previousPrice}</CardDescription>
+									<CardDescription>
+										$<del>{item.previousPrice}</del>
+									</CardDescription>
+								</div>
 							</div>
 						</Card>
 					</Link>
@@ -82,7 +84,7 @@ export const Card = ({
 			)}
 		>
 			<div className="relative z-50">
-				<div className="p-1 md:p-2 lg:p-4 space-y-2 lg:space-y-4">{children}</div>
+				<div className="p-1 md:p-2  space-y-2 lg:space-y-4">{children}</div>
 			</div>
 		</div>
 	);
@@ -95,7 +97,14 @@ export const CardTitle = ({
 	children: React.ReactNode;
 }) => {
 	return (
-		<h4 className={cn("text-xs md:text-sm lg:text-base font-bold tracking-wide", className)}>{children}</h4>
+		<h4
+			className={cn(
+				"text-xs md:text-sm lg:text-base font-bold tracking-wide",
+				className
+			)}
+		>
+			{children}
+		</h4>
 	);
 };
 export const CardDescription = ({
