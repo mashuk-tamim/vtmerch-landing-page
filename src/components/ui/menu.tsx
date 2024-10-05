@@ -26,7 +26,7 @@ useEffect(() => {
 							<span
 								className={`relative block w-full before:absolute before:left-1/2 before:top-[3px] md:before:top-[4px] before:block before:h-[2px] before:w-2/5 before:-translate-x-1/2 before:bg-red-primary before:transition-transform after:absolute after:left-1/2 after:top-[-3px] md:after:top-[-4px] after:block after:h-[2px] after:w-2/5 after:-translate-x-1/2 after:bg-red-primary after:transition-transform ${
 									isActive
-										? "before:top-[0px] md:before:-top-[0px] lg:before:-top-[0px] before:rotate-45 after:top-[0px] md:after:-top-[0px] lg:after:-top-[0px] after:-rotate-45"
+										? "before:top-[0px] md:before:top-[0px] lg:before:-top-[0px] before:rotate-45 after:top-[0px] md:after:-top-[0px] lg:after:-top-[0px] after:-rotate-45"
 										: ""
 								}`}
 							/>
