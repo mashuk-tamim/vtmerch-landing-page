@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { MoveRight } from "lucide-react";
 import signature from "@/assets/img/pat-signature White 1.png";
 import book1 from "@/assets/img/choose_your_enemies_wisely.png";
 import book2 from "@/assets/img/your_next_five_moves.png";
@@ -17,8 +17,12 @@ export default function Book() {
 					<h1 className="text-3xl lg:text-6xl font-bold text-red-primary lg:mt-2">
 						Signed <br /> Collection
 					</h1>
-					<Button size="lg" variant="secondary" className="flex gap-2 mt-2 lg:mt-4">
-						SHOW NOW <FaArrowRightLong />
+					<Button
+						size="lg"
+						variant="secondary"
+						className="flex gap-2 mt-2 lg:mt-4"
+					>
+						SHOW NOW <MoveRight />
 					</Button>
 					<Image
 						src={signature}
