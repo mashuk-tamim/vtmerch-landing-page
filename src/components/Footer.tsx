@@ -5,14 +5,22 @@ import Subscribe from "./ui/subscribe";
 import FooterLinks from "./ui/footer-links";
 import FooterPayments from "./ui/footer-payments";
 
+import FooterPayments from "./ui/footer-payments";
+
 
 export default function Footer() {
 	return (
-		<footer className="bg-black w-screen max-w-8xl mx-auto px-2 md:px-5 lg:px-10 py-5 lg:py-5">
+		<footer className="bg-black w-screen max-w-8xl mx-auto px-2 md:px-5 lg:px-10 py-5">
 			<div className="">
 				{/* logo section */}
 				<div className="border-b border-[#535351] pb-5">
 					<div className="flex items-center gap-2">
+						<Image
+							className="size-6 md:size-8 lg:size-16"
+							src={logo}
+							alt="logo"
+						/>
+						<h1 className="text-[20px] md:text-[30px] lg:text-[60px] text-white font-extrabold tracking-widest">
 						<Image
 							className="size-6 md:size-8 lg:size-16"
 							src={logo}
@@ -26,13 +34,16 @@ export default function Footer() {
 				{/* links section */}
 				<div className="flex flex-col lg:flex-row gap-10 lg:gap-20 pt-10">
 					<div className="lg:w-[35%]">
+				<div className="flex flex-col lg:flex-row gap-10 lg:gap-20 pt-10">
+					<div className="lg:w-[35%]">
 						<Subscribe />
 					</div>
-					<div className="lg:w-[65%]">
+					<div className="lg:lg:w-[65%]">
 						<FooterLinks />
 					</div>
 				</div>
 				{/* footer section */}
+				<FooterPayments />
 				<FooterPayments />
 			</div>
 		</footer>
