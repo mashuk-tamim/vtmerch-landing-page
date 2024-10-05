@@ -9,7 +9,7 @@ import { Button } from "./ui/button";
 export default function Book() {
 	return (
 		<section className="w-screen bg-[#111111] max-w-8xl mx-auto px-5 md:px-10 lg:px-20 py-10 lg:py-20 font-montserrat">
-			<div className="flex flex-col md:flex-row justify-between">
+			<div className="flex flex-col md:flex-row justify-between items-center">
 				<div className="uppercase w-full md:w-1/2">
 					<h1 className="text-xl lg:text-4xl font-bold text-white">
 						Patrick Bet-David&apos;s
