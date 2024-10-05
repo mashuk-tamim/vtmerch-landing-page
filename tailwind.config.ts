@@ -68,7 +68,7 @@ const config: Config = {
 				sm: "calc(var(--radius) - 4px)",
 			},
 			maxWidth: {
-				"8xl": "1440px", // Add 1440px as 8xl
+				"8xl": "1600px", // Add 1440px as 8xl
 			},
 		},
 	},

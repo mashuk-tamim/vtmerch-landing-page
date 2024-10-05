@@ -7,7 +7,7 @@ import FooterPayments from "./ui/footer-payments";
 
 export default function Footer() {
 	return (
-		<footer className="bg-black w-screen max-w-8xl mx-auto px-2 md:px-5 lg:px-10 py-5">
+		<footer className="bg-black w-screen max-w-8xl mx-auto px-5 md:px-10 lg:px-20 py-5">
 			<div className="">
 				{/* logo section */}
 				<div className="border-b border-[#535351] pb-5">

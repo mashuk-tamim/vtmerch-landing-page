@@ -8,7 +8,7 @@ type SectionProps = {
 export default function Section({ children, bgColor }: SectionProps) {
 	return (
 		<section
-			className={`w-screen ${bgColor} max-w-8xl mx-auto px-5 lg:px-10 py-10 lg:py-20 font-montserrat`}
+			className={`w-screen ${bgColor} max-w-8xl mx-auto px-2 md:px-5 lg:px-10 py-10 lg:py-20 font-montserrat`}
 		>
 			{children}
 		</section>
