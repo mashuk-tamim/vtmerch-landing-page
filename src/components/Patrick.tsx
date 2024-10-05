@@ -3,7 +3,8 @@ import Image from "next/image";
 import React from "react";
 import patrick from "@/assets/img/patrick.png";
 import quote from "@/assets/Icon/quotes.svg";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export default function Patrick() {
 	return (

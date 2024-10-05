@@ -20,7 +20,7 @@ useEffect(() => {
 				<div className="fixed right-2 top-2 md:right-5 md:top-5 lg:right-10 lg:top-10 z-[100]">
 					<button
 						onClick={() => setIsActive(!isActive)}
-						className="flex size-8 md:size-10 lg:size-16  cursor-pointer items-center justify-center rounded-full bg-white"
+						className="flex size-8 md:size-10 lg:size-16  cursor-pointer items-center justify-center rounded-full bg-white shadow-lg"
 					>
 						<div className="relative w-full">
 							<span
