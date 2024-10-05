@@ -27,28 +27,30 @@ export default function SubscribeForm() {
 		console.log(values);
 	}
 	return (
-		<Form {...form}>
-			<form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
-				<FormField
-					control={form.control}
-					name="email"
-					render={({ field }) => (
-						<FormItem>
-							<FormControl>
-								<Input
-									placeholder="Enter your email"
-									className="text-black text-center placeholder-black"
-									{...field}
-								/>
-							</FormControl>
-							<FormMessage />
-						</FormItem>
-					)}
-				/>
-				<Button variant="subscribe" type="submit">
-					Subscribe
-				</Button>
-			</form>
-		</Form>
+		<div className="w-3/4 md:w-full">
+			<Form {...form}>
+				<form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
+					<FormField
+						control={form.control}
+						name="email"
+						render={({ field }) => (
+							<FormItem>
+								<FormControl>
+									<Input
+										placeholder="Enter your email"
+										className="text-black text-center placeholder-black h-9 lg:h-10"
+										{...field}
+									/>
+								</FormControl>
+								<FormMessage />
+							</FormItem>
+						)}
+					/>
+					<Button variant="subscribe" type="submit">
+						Subscribe
+					</Button>
+				</form>
+			</Form>
+		</div>
 	);
 }
