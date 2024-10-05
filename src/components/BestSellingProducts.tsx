@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { CardHoverEffect } from "./ui/card-hover-effect";
-import { caps } from "@/mockData/caps";
+import { caps } from "../mockData/caps";
 
 export default function BestSellingProducts() {
 	return (
