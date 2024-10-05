@@ -16,15 +16,15 @@ import Image from "next/image";
 
 const FooterLinks = () => {
 	return (
-		<div className="flex justify-between text-[#cccccc]">
+		<div className="flex flex-col md:flex-row gap-5 text-center md:text-left justify-between text-[#cccccc]">
 			<div className="flex-1">
-				<h3 className="text-lg font-semibold mb-4 text-white">
+				<h3 className="text-base lg:text-lg font-semibold mb-2 md:mb-4 text-white">
 					Customer Services
 				</h3>
 				<ul className="space-y-2">
 					{customerServices.map((item) => (
 						<li key={item}>
-							<Link href="#" className="hover:underline">
+							<Link href="#" className="hover:underline text-sm lg:text-base">
 								{item}
 							</Link>
 						</li>
@@ -32,7 +32,9 @@ const FooterLinks = () => {
 				</ul>
 			</div>
 			<div className="flex-1">
-				<h3 className="text-lg font-semibold mb-4 text-white">Products</h3>
+				<h3 className="text-base lg:text-lg font-semibold mb-2 md:mb-4 text-white">
+					Products
+				</h3>
 				<ul className="space-y-2">
 					{products.map((item) => (
 						<li key={item}>
@@ -44,31 +46,24 @@ const FooterLinks = () => {
 				</ul>
 			</div>
 			<div className="flex-1">
-				<h3 className="text-lg font-semibold mb-4 text-white">Contact Us</h3>
+				<h3 className="text-base lg:text-lg font-semibold mb-2 md:mb-4 text-white">
+					Contact Us
+				</h3>
 				<p className="mb-2">
 					Available between 8AM to 8PM. Ready to answer your questions.
 				</p>
-				<div className="flex items-center gap-2 mb-2">
-					<Image src={telephone} alt="telephone" />
-					<p>013456789</p>
-				</div>
-				<div className="flex items-center gap-2 mb-2">
-					<Image src={email} alt="email" />
-					<p>store@valuetainment.com</p>
-				</div>
-				<div className="flex space-x-4">
-					<Link href="#" aria-label="Facebook">
-						<Image src={facebook} alt="facebook" />
-					</Link>
-					<Link href="#" aria-label="Twitter">
-						<Image src={twitter} alt="twitter" />
-					</Link>
-					<Link href="#" aria-label="LinkedIn">
-						<Image src={linkedIn} alt="linkedIn" />
-					</Link>
-					<Link href="#" aria-label="Instagram">
-						<Image src={instagram} alt="instagram" />
-					</Link>
+				<div className="flex flex-col items-center md:items-start">
+					<div className="flex items-center gap-2 mb-2">
+						<Image src={telephone} alt="telephone" />
+						<p>013456789</p>
+					</div>
+					<div className="flex items-center gap-2 mb-2">
+						<Image src={email} alt="email" />
+						<p>store@valuetainment.com</p>
+					</div>
+					<div className="flex gap-4">
+						<SocialLinks />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -94,3 +89,22 @@ const products = [
 	"All collections",
 	"All products",
 ];
+
+const SocialLinks = () => {
+	return (
+		<>
+			<Link href="#" aria-label="Facebook">
+				<Image src={facebook} alt="facebook" />
+			</Link>
+			<Link href="#" aria-label="Twitter">
+				<Image src={twitter} alt="twitter" />
+			</Link>
+			<Link href="#" aria-label="LinkedIn">
+				<Image src={linkedIn} alt="linkedIn" />
+			</Link>
+			<Link href="#" aria-label="Instagram">
+				<Image src={instagram} alt="instagram" />
+			</Link>
+		</>
+	);
+};
