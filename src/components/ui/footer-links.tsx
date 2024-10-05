@@ -1,10 +1,5 @@
 import Link from "next/link";
-// import { FaFacebookF } from "react-icons/fa";
-// import { FaTwitter } from "react-icons/fa";
-// import { FaLinkedinIn } from "react-icons/fa";
-// import { FaInstagram } from "react-icons/fa";
-// import { IoCallOutline } from "react-icons/io5";
-// import { GoMail } from "react-icons/go";
+
 
 import facebook from "@/assets/Icon/facebook (4).svg";
 import twitter from "@/assets/Icon/twitter (4).svg";
