@@ -5,5 +5,6 @@ export type CardTypes = {
 	title: string;
 	recentPrice: string;
 	previousPrice: string;
-	img: StaticImageData;
+  img: StaticImageData;
+  href: string;
 };

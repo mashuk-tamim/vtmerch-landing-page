@@ -5,7 +5,7 @@ import Link from "next/link";
 const HeroCard = ({ shirt }: { shirt: CardTypes }) => {
 	return (
 		<div className="space-y-2 mx-0 md:mx-[6px] lg:mx-2">
-			<Link href="#">
+			<Link href={shirt.href}>
 				<Image
 					src={shirt.img}
 					alt={shirt.title}

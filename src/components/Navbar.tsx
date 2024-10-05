@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/assets/Logo/white-logo.svg";
+import logo from "@/assets/Logo/red-logo.svg";
 import Menu from "./ui/menu";
 import Link from "next/link";
 

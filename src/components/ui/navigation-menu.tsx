@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-import { menuSlide } from "@/lib/anim";
+import { menuSlide } from "@/lib/menu-anim";
 import NavigationMenuLink from "./navigation-menu-link";
 import Curve from "./curve";
 import { NavItem } from "@/types/menu";

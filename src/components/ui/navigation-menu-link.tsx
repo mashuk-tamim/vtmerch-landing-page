@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { slide, scale } from "@/lib/anim";
+import { slide, scale } from "@/lib/menu-anim";
 import { LinkProps } from "@/types/menu";
 
 export default function NavigationMenuLink({
