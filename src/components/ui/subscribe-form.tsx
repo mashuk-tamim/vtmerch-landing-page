@@ -7,6 +7,7 @@ import { z } from "zod";
 import { subscribeFormSchema } from "@/types/subscribe-form-schema";
 
 import { Button } from "@/components/ui/button";
+
 import {
 	Form,
 	FormControl,
@@ -14,10 +15,9 @@ import {
 	FormItem,
 	FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+import { Input } from "./input";
 
 export default function SubscribeForm() {
-
 	const form = useForm<z.infer<typeof subscribeFormSchema>>({
 		resolver: zodResolver(subscribeFormSchema),
 	});
@@ -37,7 +37,7 @@ export default function SubscribeForm() {
 							<FormControl>
 								<Input
 									placeholder="Enter your email"
-									className="text-white text-center placeholder-white"
+									className="text-black text-center placeholder-black"
 									{...field}
 								/>
 							</FormControl>

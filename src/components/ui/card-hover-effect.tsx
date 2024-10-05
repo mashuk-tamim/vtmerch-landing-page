@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { CardTypes } from "@/types/shirts";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export const CardHoverEffect = ({
@@ -35,29 +36,31 @@ export const CardHoverEffect = ({
 								initial={{ opacity: 0 }}
 								animate={{
 									opacity: 1,
-									transition: { duration: 0.10 },
+									transition: { duration: 0.1 },
 								}}
 								exit={{
 									opacity: 0,
-									transition: { duration: 0.10, delay: 0.1 },
+									transition: { duration: 0.1, delay: 0.1 },
 								}}
 							/>
 						)}
 					</AnimatePresence>
-					<Card>
-						<Image
-							src={item.img}
-							alt={item.title}
-							className="w-full rounded-lg border"
-						/>
-						<CardTitle>{item.title}</CardTitle>
-						<div className="flex gap-4">
-							<CardDescription>${item.previousPrice}</CardDescription>
-							<CardDescription>
-								$<del>{item.previousPrice}</del>
-							</CardDescription>
-						</div>
-					</Card>
+					<Link href="#">
+						<Card>
+							<Image
+								src={item.img}
+								alt={item.title}
+								className="w-full rounded-lg border"
+							/>
+							<CardTitle>{item.title}</CardTitle>
+							<div className="flex gap-4">
+								<CardDescription>${item.previousPrice}</CardDescription>
+								<CardDescription>
+									$<del>{item.previousPrice}</del>
+								</CardDescription>
+							</div>
+						</Card>
+					</Link>
 				</div>
 			))}
 		</div>
@@ -103,7 +106,12 @@ export const CardDescription = ({
 	children: React.ReactNode;
 }) => {
 	return (
-		<p className={cn("tracking-wide leading-relaxed font-bold text-lg", className)}>
+		<p
+			className={cn(
+				"tracking-wide leading-relaxed font-bold text-lg",
+				className
+			)}
+		>
 			{children}
 		</p>
 	);
