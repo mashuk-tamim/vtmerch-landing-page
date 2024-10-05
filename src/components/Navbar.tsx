@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "@/assets/Logo/white-logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import Menu from "./ui/menu";
 
 export default function Navbar() {
 	return (
