@@ -1,28 +1,5 @@
-"use client";
 import Link from "next/link";
-import Image from "next/image";
-import telephone from "@/assets/Icon/telephone (2) 1.svg";
-import email from "@/assets/Icon/email 1.svg";
-import LinkHoverAnimation from "./link-hover-animation";
-import MagneticButton from "./magnetic-button";
-
-const CUSTOMER_SERVICES = [
-	"About Us",
-	"Search",
-	"Privacy Policy",
-	"Contact Us",
-	"Terms of Service",
-	"Refund policy",
-	"Track Order",
-];
-
-const PRODUCTS = [
-	"Featured products",
-	"Bestseller",
-	"Latest product",
-	"All collections",
-	"All products",
-];
+import MagneticButton from "../Buttons/magnetic-button";
 
 interface SocialIconProps {
 	href: string;
@@ -42,72 +19,9 @@ const SocialIcon: React.FC<SocialIconProps> = ({
 	</Link>
 );
 
-const CustomerServiceSection = () => (
-	<div className="flex-1">
-		<h3 className="text-base lg:text-lg font-semibold mb-2 md:mb-4 text-white">
-			Customer Services
-		</h3>
-		<ul className="space-y-2">
-			{CUSTOMER_SERVICES.map((item, idx) => (
-				<li key={idx}>
-					<Link href="#" className="text-sm lg:text-base inline-block">
-						<LinkHoverAnimation text={item} />
-					</Link>
-				</li>
-			))}
-		</ul>
-	</div>
-);
-
-const ProductsSection = () => (
-	<div className="flex-1">
-		<h3 className="text-base lg:text-lg font-semibold mb-2 md:mb-4 text-white">
-			Products
-		</h3>
-		<ul className="space-y-2">
-			{PRODUCTS.map((item) => (
-				<li key={item}>
-					<Link href="#" className="text-sm lg:text-base inline-block">
-						<LinkHoverAnimation text={item} />
-					</Link>
-				</li>
-			))}
-		</ul>
-	</div>
-);
-
-const ContactSection = () => (
-	<div className="flex-1">
-		<h3 className="text-base lg:text-lg font-semibold mb-2 md:mb-4 text-white">
-			Contact Us
-		</h3>
-		<div className="text-sm lg:text-base inline-block">
-			<p className="mb-2">
-				Available between 8AM to 8PM. Ready to answer your questions.
-			</p>
-			<div className="flex flex-col items-center md:items-start">
-				<div className="flex items-center gap-2 mb-2">
-					<Image src={telephone} alt="telephone" />
-					<p>013456789</p>
-				</div>
-				<div className="flex items-center gap-2 mb-2">
-					<Image src={email} alt="email" />
-					<p>store@valuetainment.com</p>
-				</div>
-				<div className="flex gap-4">
-					<SocialLinks />
-				</div>
-			</div>
-		</div>
-	</div>
-);
-
-const SocialLinks = () => (
+export const SocialLinks = () => (
 	<>
-		<SocialIcon
-			href="#"
-			ariaLabel="Facebook"
-		>
+		<SocialIcon href="#" ariaLabel="Facebook">
 			<svg
 				width="21"
 				height="20"
@@ -135,10 +49,7 @@ const SocialLinks = () => (
 				/>
 			</svg>
 		</SocialIcon>
-		<SocialIcon
-			href="#"
-			ariaLabel="LinkedIn"
-		>
+		<SocialIcon href="#" ariaLabel="LinkedIn">
 			<svg
 				width="21"
 				height="20"
@@ -196,16 +107,3 @@ const SocialLinks = () => (
 		</SocialIcon>
 	</>
 );
-
-// Main Component
-const FooterLinks = () => {
-	return (
-		<div className="flex flex-col md:flex-row gap-5 text-center md:text-left justify-between text-[#cccccc]">
-			<CustomerServiceSection />
-			<ProductsSection />
-			<ContactSection />
-		</div>
-	);
-};
-
-export default FooterLinks;

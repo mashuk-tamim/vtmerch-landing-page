@@ -4,7 +4,7 @@ import {
 	wordLetterAnimation,
 	wordLetterAnimationTwo,
 } from "@/lib/word-hover-anim";
-import { AnimatedWord } from "./animated-word";
+import { AnimatedWord } from "../Buttons/animated-word";
 
 export default function WordHoverAnimation({
 	text,

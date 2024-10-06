@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-import { menuSlide } from "@/lib/menu-anim";
+import { menuSlide } from "@/animations/menu-anim";
 import NavigationMenuLink from "./navigation-menu-link";
-import Curve from "./curve";
-import { NavItem } from "@/types/menu";
+import Curve from "../ui/curve";
+import { NavItem } from "@/types/menu-types";
 
 export default function NavigationMenu(): JSX.Element {
   const pathname = usePathname();

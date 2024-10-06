@@ -1,16 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
 import signature from "@/assets/img/pat-signature White 1.png";
 import book1 from "@/assets/img/choose_your_enemies_wisely.png";
 import book2 from "@/assets/img/your_next_five_moves.png";
-import { Button } from "./ui/button";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 export default function Book() {
-	const [isButtonHovered, setIsButtonHovered] = useState<boolean>(false);
 	const imageRef = useRef(null);
 
 	const { scrollYProgress } = useScroll({
@@ -108,27 +106,3 @@ export default function Book() {
 		</section>
 	);
 }
-
-// <Button
-//   size="lg"
-//   variant="secondary"
-//   className="flex gap-2 mt-2 lg:mt-4"
-//   whileHover="hover"
-//   initial="initial"
-//   variants={{
-//     initial: { justifyContent: "center" }, // Centered initially
-//     hover: { justifyContent: "start" }, // Moves left on hover
-//   }}
-// >
-//   SHOW NOW{" "}
-//   <motion.span
-//     onHoverStart={{ scale: 0 }}
-//     onHoverEnd={{ scale: 1 }}
-//     transition={{
-//       duration: 0.3,
-//       ease: "easeInOut",
-//     }}
-//   >
-//     <MoveRight />
-//   </motion.span>
-// </Button>

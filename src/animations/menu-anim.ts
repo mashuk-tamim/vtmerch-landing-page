@@ -31,11 +31,10 @@ export const scale = {
 	open: { scale: 1, transition: { duration: 0.3 } },
 	closed: { scale: 0, transition: { duration: 0.3 } },
 };
-// Initialize initialPath and targetPath with default values
+
 let initialPath = "";
 let targetPath = "";
 
-// Check if window is available (client-side rendering)
 if (typeof window !== "undefined" && window.innerHeight) {
 	initialPath = `M100 0 L200 0 L200 ${window.innerHeight} L100 ${
 		window.innerHeight

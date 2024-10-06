@@ -1,6 +1,6 @@
-import { AnimatedLetterProps, AnimatedWordProps } from "@/types/word-hover-anim";
+import { AnimatedLetterProps, AnimatedWordProps } from "@/types/word-hover-types";
 import { motion } from "framer-motion";
-import { letterStaggerAnimation } from "@/lib/letter-stagger-anim";
+import { letterStaggerAnimation } from "@/animations/letter-stagger-anim";
 
 
 export const AnimatedLetter = ({

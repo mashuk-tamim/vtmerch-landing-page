@@ -1,6 +1,6 @@
 import Image from "next/image";
 import logo from "@/assets/Logo/red-logo.svg";
-import Menu from "./ui/menu";
+import Menu from "./menu";
 import Link from "next/link";
 
 export default function Navbar() {

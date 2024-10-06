@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import logo from "@/assets/Logo/red-logo.svg";
-import Subscribe from "./ui/subscribe";
-import FooterLinks from "./ui/footer-links";
-import FooterPayments from "./ui/footer-payments";
+import Subscribe from "./subscribe";
+import FooterLinks from "./footer-links";
+import FooterPayments from "./footer-payments";
 
 export default function Footer() {
 	return (

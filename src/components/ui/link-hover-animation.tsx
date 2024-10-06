@@ -1,8 +1,9 @@
+"use client"
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import { AnimatedWord } from "./animated-word";
-import { linkLetterAnimation, linkLetterAnimationTwo } from "@/lib/link-hover.anim";
+import { AnimatedWord } from "../Buttons/animated-word";
+import { linkLetterAnimation, linkLetterAnimationTwo } from "@/animations/link-hover.anim";
 
 export default function LinkHoverAnimation({
 	text,

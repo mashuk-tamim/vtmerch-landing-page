@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect } from "react";
 import { motion, useAnimationControls } from "framer-motion";
-import { shirts } from "@/mockData/shirts";
-import HeroCard from "./ui/hero-card";
+import { shirts } from "@/mockData/shirts-data";
+import HeroCard from "./hero-card";
 
 export default function Hero() {
 	const controls = useAnimationControls();
