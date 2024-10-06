@@ -29,7 +29,7 @@ export default function Menu(): JSX.Element {
 							<Image
 								src={line}
 								alt="menu-line"
-								className={`absolute w-full lg:w-4/5 transition-transform duration-300 ease-in-out ${
+								className={`absolute w-full md:w-4/5 transition-transform duration-300 ease-in-out ${
 									isActive ? "rotate-45" : ""
 								}`}
 								style={{ top: isActive ? "50%" : "35%" }}
@@ -38,7 +38,7 @@ export default function Menu(): JSX.Element {
 							<Image
 								src={line}
 								alt="menu-line"
-								className={`absolute w-full lg:w-4/5 transition-transform duration-300 ease-in-out ${
+								className={`absolute w-full md:w-4/5 transition-transform duration-300 ease-in-out ${
 									isActive ? "-rotate-45" : ""
 								}`}
 								style={{ top: isActive ? "50%" : "55%" }}

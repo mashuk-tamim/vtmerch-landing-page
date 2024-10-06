@@ -4,8 +4,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Lens } from "./lens";
 
-export const CardHoverEffect = ({
+export const BestSellingCard = ({
 	items,
 	className,
 }: {
@@ -13,7 +14,7 @@ export const CardHoverEffect = ({
 	className?: string;
 }) => {
 	const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
+	const [hoveredImage, setHoveredImage] = useState<number | null>(null);
 	return (
 		<div
 			className={cn(
@@ -45,13 +46,23 @@ export const CardHoverEffect = ({
 							/>
 						)}
 					</AnimatePresence>
-					<Link href="#">
+					<Link href={item.href}>
 						<Card>
-							<Image
-								src={item.img}
-								alt={item.title}
-								className="w-full rounded-xl"
-							/>
+							<Lens
+								id={item.id}
+								hovering={hoveredImage === item.id}
+								setHovering={(isHovering) =>
+									setHoveredImage(isHovering ? item.id : null)
+								}
+							>
+								<Image
+									src={item.img}
+									alt={item.title}
+									className="w-full rounded-xl"
+									onMouseEnter={() => setHoveredImage(item.id)}
+									onMouseLeave={() => setHoveredImage(null)}
+								/>
+							</Lens>
 							<div className="p-1 lg:px-2 lg:py-1">
 								<CardTitle>{item.title}</CardTitle>
 								<div className="flex gap-4">

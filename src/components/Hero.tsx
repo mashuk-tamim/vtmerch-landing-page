@@ -1,11 +1,23 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, useAnimationControls } from "framer-motion";
 import { shirts } from "@/mockData/shirts";
 import HeroCard from "./ui/hero-card";
 
 export default function Hero() {
-  const controls = useAnimationControls();
+	const controls = useAnimationControls();
+	useEffect(() => {
+		controls.start({
+			x: "-100%",
+			transition: {
+				duration: 30,
+				ease: "linear",
+				repeat: Infinity,
+				repeatType: "loop",
+			},
+		});
+	}, [controls]);
+
 	return (
 		<section className="w-screen bg-black max-w-8xl mx-auto px-1 md:px-2 py-10 lg:py-20 font-montserrat">
 			<h1 className="uppercase text-4xl md:text-6xl lg:text-7xl xl:text-8xl text-red-primary font-actOfRejection px-2 md:px-5 lg:px-10 relative z-0">

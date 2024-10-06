@@ -1,6 +1,5 @@
+"use client"
 import Link from "next/link";
-
-
 import facebook from "@/assets/Icon/facebook (4).svg";
 import twitter from "@/assets/Icon/twitter (4).svg";
 import linkedIn from "@/assets/Icon/linkedin (3).svg";
@@ -8,6 +7,7 @@ import instagram from "@/assets/Icon/instagram-logo (1).svg";
 import telephone from "@/assets/Icon/telephone (2) 1.svg";
 import email from "@/assets/Icon/email 1.svg";
 import Image from "next/image";
+import LinkHoverAnimation from "./link-hover-animation";
 
 const FooterLinks = () => {
 	return (
@@ -17,10 +17,10 @@ const FooterLinks = () => {
 					Customer Services
 				</h3>
 				<ul className="space-y-2">
-					{customerServices.map((item) => (
-						<li key={item}>
-							<Link href="#" className="hover:underline text-sm lg:text-base">
-								{item}
+					{customerServices.map((item, idx) => (
+						<li key={idx} className="">
+							<Link href="#" className="text-sm lg:text-base inline-block">
+								<LinkHoverAnimation text={item} />
 							</Link>
 						</li>
 					))}
@@ -33,8 +33,8 @@ const FooterLinks = () => {
 				<ul className="space-y-2">
 					{products.map((item) => (
 						<li key={item}>
-							<Link href="#" className="hover:underline">
-								{item}
+							<Link href="#" className="text-sm lg:text-base inline-block">
+								<LinkHoverAnimation text={item} />
 							</Link>
 						</li>
 					))}
