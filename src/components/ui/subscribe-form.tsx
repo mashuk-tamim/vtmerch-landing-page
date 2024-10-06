@@ -16,6 +16,7 @@ import {
 	FormMessage,
 } from "@/components/ui/form";
 import { Input } from "./input";
+import AnimatedButton from "./animated-button";
 
 export default function SubscribeForm() {
 	const form = useForm<z.infer<typeof subscribeFormSchema>>({
@@ -38,7 +39,7 @@ export default function SubscribeForm() {
 								<FormControl>
 									<Input
 										placeholder="Enter your email"
-										className="text-black text-center placeholder-black h-9 lg:h-10"
+										className="text-black text-center placeholder-black font-semibold h-9 lg:h-10"
 										{...field}
 									/>
 								</FormControl>
@@ -46,9 +47,7 @@ export default function SubscribeForm() {
 							</FormItem>
 						)}
 					/>
-					<Button variant="subscribe" type="submit">
-						Subscribe
-					</Button>
+          <AnimatedButton text="Subscribe"/>
 				</form>
 			</Form>
 		</div>

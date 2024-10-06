@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {
-	letterAnimation,
-	letterAnimationTwo,
-} from "@/lib/word-hover-anim";
+
 import { AnimatedWord } from "./animated-word";
+import { linkLetterAnimation, linkLetterAnimationTwo } from "@/lib/link-hover.anim";
 
 export default function LinkHoverAnimation({
 	text,
@@ -16,17 +14,19 @@ export default function LinkHoverAnimation({
 		<motion.div
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
-			className={`relative overflow-hidden py-0 ${isHovered? "text-red-primary" : ""}`}
+			className={`relative overflow-hidden py-0 ${
+				isHovered ? "text-red-primary" : ""
+			}`}
 		>
 			<AnimatedWord
-        text={text}
-        animation={letterAnimation}
-        isHovered={isHovered}
-        />
+				text={text}
+				animation={linkLetterAnimation}
+				isHovered={isHovered}
+			/>
 			<div className="absolute top-0">
 				<AnimatedWord
 					text={text}
-					animation={letterAnimationTwo}
+					animation={linkLetterAnimationTwo}
 					isHovered={isHovered}
 				/>
 			</div>

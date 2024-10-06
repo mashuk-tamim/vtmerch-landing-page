@@ -10,7 +10,7 @@ import americanExpress from "@/assets/Icon/american-express (1) 1.svg";
 
 export default function FooterPayments() {
   return (
-		<div className="flex flex-col-reverse md:flex-row gap-2 items-center justify-between pt-10">
+		<div className="flex flex-col-reverse md:flex-row gap-2 items-center justify-between py-10">
 			<div>
 				<p className="text-[#cccccc] text-xs">
 					&copy; 2024 Valuetainment Store. All rights reserved.

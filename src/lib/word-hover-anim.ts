@@ -1,4 +1,4 @@
-export const letterAnimation = {
+export const wordLetterAnimation = {
 	rest: {
 		y: 0,
 	},
@@ -12,7 +12,7 @@ export const letterAnimation = {
 	},
 };
 
-export const letterAnimationTwo = {
+export const wordLetterAnimationTwo = {
 	rest: {
 		y: 100,
 	},

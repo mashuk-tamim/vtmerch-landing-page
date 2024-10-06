@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
-	letterAnimation,
-	letterAnimationTwo,
+	wordLetterAnimation,
+	wordLetterAnimationTwo,
 } from "@/lib/word-hover-anim";
 import { AnimatedWord } from "./animated-word";
 
@@ -25,13 +25,13 @@ export default function WordHoverAnimation({
 		>
 			<AnimatedWord
 				text={text}
-				animation={letterAnimation}
+				animation={wordLetterAnimation}
         isHovered={isHovered}
         />
 			<div className="absolute top-0">
 				<AnimatedWord
 					text={text}
-					animation={letterAnimationTwo}
+					animation={wordLetterAnimationTwo}
 					isHovered={isHovered}
 				/>
 			</div>
