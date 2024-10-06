@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { curve } from "@/lib/anim";
+import { curve } from "@/lib/menu-anim";
 
 export default function Curve() {
 	return (

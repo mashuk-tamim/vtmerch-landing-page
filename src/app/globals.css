@@ -12,15 +12,13 @@ body {
 	}
 	.font-outline-1 {
 		-webkit-text-stroke: 1px #060606;
-		fill: #f6f5f5; /* Keeps the fill of the text visible */
+		fill: #f6f5f5;
 	}
 	.font-outline-shadow {
-		text-shadow: 1px 1px 0px #060606, /* Bottom-right */ -1px -1px 0px #060606,
-			/* Top-left */ -1px 1px 0px #060606,
-			/* Bottom-left */ 1px -1px 0px #060606,
-			/* Top-right */ 1px 0px 0px #060606, /* Right */ -1px 0px 0px #060606,
-			/* Left */ 0px 1px 0px #060606, /* Bottom */ 0px -1px 0px #060606; /* Top */
-		text-rendering: optimizeLegibility; /* Improves rendering */
+		text-shadow: 1px 1px 0px #060606, -1px -1px 0px #060606,
+			-1px 1px 0px #060606, 1px -1px 0px #060606, 1px 0px 0px #060606,
+			-1px 0px 0px #060606, 0px 1px 0px #060606, 0px -1px 0px #060606;
+		text-rendering: optimizeLegibility;
 		-webkit-font-smoothing: antialiased;
 	}
 }

@@ -12,6 +12,7 @@ export const shirts: CardTypes[] = [
 		recentPrice: "34.95",
 		previousPrice: "39.95",
 		img: shirt1,
+		href: "/1",
 	},
 	{
 		id: 2,
@@ -19,6 +20,7 @@ export const shirts: CardTypes[] = [
 		recentPrice: "34.95",
 		previousPrice: "39.95",
 		img: shirt2,
+		href: "/2",
 	},
 	{
 		id: 3,
@@ -26,6 +28,7 @@ export const shirts: CardTypes[] = [
 		recentPrice: "34.95",
 		previousPrice: "39.95",
 		img: shirt3,
+		href: "/3",
 	},
 	{
 		id: 4,
@@ -33,6 +36,7 @@ export const shirts: CardTypes[] = [
 		recentPrice: "34.95",
 		previousPrice: "39.95",
 		img: shirt4,
+		href: "/4",
 	},
 	{
 		id: 5,
@@ -40,5 +44,6 @@ export const shirts: CardTypes[] = [
 		recentPrice: "34.95",
 		previousPrice: "39.95",
 		img: shirt5,
+		href: "/5",
 	},
 ];

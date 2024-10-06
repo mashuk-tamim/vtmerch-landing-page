@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { slide, scale } from "@/lib/anim";
+import { slide, scale } from "@/lib/menu-anim";
 import { LinkProps } from "@/types/menu";
 
 export default function NavigationMenuLink({
@@ -25,7 +25,7 @@ export default function NavigationMenuLink({
 			<motion.div
 				variants={scale}
 				animate={isActive ? "open" : "closed"}
-				className="absolute -left-[30px] h-2.5 w-2.5 rounded-full bg-white font-montserrat"
+				className="absolute -left-[30px] h-2.5 w-2.5 rounded-full bg-red-primary font-montserrat"
 			/>
 			<Link href={href} >{title}</Link>
 		</motion.div>
