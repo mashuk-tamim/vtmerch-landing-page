@@ -20,7 +20,7 @@ export default function WordHoverAnimation({
 			className={`relative overflow-hidden ${
 				isHovered
 					? "text-red-primary font-outline-shadow"
-					: "font-outline-shadow text-[#f6f5f5]"
+					: "font-outline-shadow text-grey-secondary"
 			}`}
 		>
 			<AnimatedWord

@@ -4,7 +4,7 @@ import ContactSection from "./contact-section";
 
 const FooterLinks = () => {
 	return (
-		<div className="flex flex-col md:flex-row gap-5 text-center md:text-left justify-between text-[#cccccc]">
+		<div className="flex flex-col md:flex-row gap-5 text-center md:text-left justify-between text-grey-primary">
 			<CustomerServiceLinks />
 			<ProductsLinks />
 			<ContactSection />

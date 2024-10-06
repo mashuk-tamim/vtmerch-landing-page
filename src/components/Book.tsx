@@ -22,7 +22,7 @@ export default function Book() {
 	const rotate2 = useTransform(scrollYProgress, [0, 1], [0, 5]);
 
 	return (
-		<section className="w-screen bg-[#111111] max-w-8xl mx-auto px-5 md:px-10 lg:px-20 py-10 lg:py-20 font-montserrat">
+		<section className="w-screen bg-black-primary max-w-8xl mx-auto px-5 md:px-10 lg:px-20 py-10 lg:py-20 font-montserrat">
 			<div className="flex flex-col md:flex-row justify-between items-center">
 				<div className="uppercase w-full md:w-1/2">
 					<h1 className="text-xl lg:text-4xl font-bold text-white">
@@ -45,7 +45,7 @@ export default function Book() {
 								duration: 0.3,
 								ease: "easeInOut",
 							}}
-							className="text-xs md:text-sm lg:text-base"
+							className="text-xs md:text-sm lg:text-base font-semibold"
 						>
 							SHOP NOW
 						</motion.span>

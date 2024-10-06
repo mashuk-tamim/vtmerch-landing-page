@@ -11,9 +11,16 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
+				"red-primary": "#EA2127",
+				"red-secondary": "#f27a7d",
+				"red-gradient-start": "#ec3339",
+				"red-gradient-end": "#bb1217",
+				"grey-primary": "#cccccc",
+				"grey-secondary": "#f6f5f5",
+				"black-primary": "#111111",
+				"black-secondary": "#060606",
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
-				"red-primary": "#EA2127",
 				card: {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",

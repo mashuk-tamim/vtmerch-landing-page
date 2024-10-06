@@ -10,7 +10,7 @@ export default function Footer() {
 		<footer className="bg-black w-screen max-w-8xl mx-auto px-5 md:px-10 lg:px-20 py-5">
 			<div className="">
 				{/* logo section */}
-				<div className="border-b border-[#535351] pb-5">
+				<div className="border-b border-grey-primary pb-5">
 					<div className="flex items-center gap-2">
 						<Image
 							className="size-6 md:size-8 lg:size-16"

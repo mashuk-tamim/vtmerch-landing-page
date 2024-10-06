@@ -19,14 +19,14 @@ export default function NavigationMenu(): JSX.Element {
 			initial="initial"
 			animate="enter"
 			exit="exit"
-			className="fixed right-0 top-0 z-50 h-screen bg-[#111110] text-white border-l-2 border-[#f27a7d]"
+			className="fixed right-0 top-0 z-50 h-screen bg-black-primary text-white border-l-2 border-red-secondary"
 		>
 			<div className="flex h-full flex-col justify-between box-border p-24">
 				<nav
 					onMouseLeave={() => setSelectedIndicator(pathname)}
 					className="mt-20 flex flex-col gap-3"
 				>
-					<div className="mb-10 border-b border-[#cccccc] text-xs uppercase text-[#cccccc]">
+					<div className="mb-10 border-b border-grey-primary text-xs uppercase text-grey-primary">
 						<p>Navigation</p>
 					</div>
 					{navItems.map((data, index) => (

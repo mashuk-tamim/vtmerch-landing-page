@@ -21,7 +21,7 @@ export default function Patrick() {
 	return (
 		<section
 			ref={containerRef}
-			className="w-screen bg-gradient-to-r from-[#ec3339] to-[#bb1217] max-w-8xl mx-auto px-5 md:px-10 lg:px-20 font-montserrat h-[30vh] md:h-[40vh]"
+			className="w-screen bg-gradient-to-r from-red-gradient-start to-red-gradient-end max-w-8xl mx-auto px-5 md:px-10 lg:px-20 font-montserrat h-[30vh] md:h-[40vh]"
 		>
 			<div className="flex items-center relative h-full">
 				<div className="relative py-10 lg:py-20 z-100">

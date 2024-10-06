@@ -5,7 +5,7 @@ import { curve } from "@/animations/menu-anim";
 
 export default function Curve() {
 	return (
-		<svg className="absolute -left-[99px] top-0 h-full w-[100px] fill-[#111110]">
+		<svg className="absolute -left-[99px] top-0 h-full w-[100px] fill-black-primary">
 			<motion.path
 				variants={curve}
 				initial="initial"
