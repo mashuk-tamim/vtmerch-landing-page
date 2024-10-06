@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
-import { CardTypes } from "@/types/shirts";
+import { CardTypes } from "@/types/shirts-types";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Lens } from "./lens";
+import { Lens } from "@/components/ui/lens";
 
 export const BestSellingCard = ({
 	items,

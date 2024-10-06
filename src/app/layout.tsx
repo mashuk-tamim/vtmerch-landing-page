@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { montserrat, inter, actOfRejection } from "@/lib/fonts";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
 
 export const metadata: Metadata = {
 	title: "vtmerch.com",

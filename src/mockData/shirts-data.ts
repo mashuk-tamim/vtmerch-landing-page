@@ -3,7 +3,7 @@ import shirt2 from "@/assets/img/slider2.png";
 import shirt3 from "@/assets/img/slider3.jpeg";
 import shirt4 from "@/assets/img/slider4.png";
 import shirt5 from "@/assets/img/slider5.png";
-import { CardTypes } from "@/types/shirts";
+import { CardTypes } from "@/types/shirts-types";
 
 export const shirts: CardTypes[] = [
 	{

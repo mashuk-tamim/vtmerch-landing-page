@@ -48,9 +48,3 @@ const Word = ({ children, range, scrollYProgress }: WordProps) => {
 		</span>
 	);
 };
-
-/**
-<h1 className="uppercase text-sm md:text-2xl lg:text-4xl font-bold text-white w-[60%]">
-			{quote}
-		</h1>
- */

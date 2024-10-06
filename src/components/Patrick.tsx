@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import PatrickQuote from "./ui/patrick-quote";
 
-const quote =
+const QUOTE =
 	"Our mission is to enlighten, entertain and empower current and future leaders around the world.";
 
 export default function Patrick() {
@@ -43,7 +43,7 @@ export default function Patrick() {
 						/>
 					</motion.div>
 					<h1 className="uppercase text-sm md:text-2xl lg:text-4xl font-bold text-white w-[60%]">
-						<PatrickQuote quote={quote} />
+						<PatrickQuote quote={QUOTE} />
 					</h1>
 				</div>
 				<Image

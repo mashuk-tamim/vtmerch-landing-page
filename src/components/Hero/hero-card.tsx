@@ -1,8 +1,8 @@
 "use client"
-import { CardTypes } from "@/types/shirts";
+import { CardTypes } from "@/types/shirts-types";
 import Image from "next/image";
 import Link from "next/link";
-import { Lens } from "./lens";
+import { Lens } from "../ui/lens";
 import { useState } from "react";
 
 const HeroCard = ({ shirt }: { shirt: CardTypes }) => {
@@ -29,7 +29,7 @@ const HeroCard = ({ shirt }: { shirt: CardTypes }) => {
 					<h1 className="text-xs md:text-sm text-white w-40 md:w-52 lg:w-64 ">
 						{shirt.title}
 					</h1>
-					<div className="flex gap-4 text-sm md:text-base text-[#fbd3d4]">
+					<div className="flex gap-4 text-sm md:text-base text-white font-medium">
 						<p>${shirt.recentPrice}</p>
 						<p>
 							<del>${shirt.previousPrice}</del>

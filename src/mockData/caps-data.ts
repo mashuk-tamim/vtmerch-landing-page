@@ -4,7 +4,7 @@ import cap3 from "@/assets/img/cap3.jpeg";
 import cap5 from "@/assets/img/cap5.jpeg";
 import bag1 from "@/assets/img/bag3.jpeg";
 import pot1 from "@/assets/img/pot1.jpeg";
-import { CardTypes } from "@/types/shirts";
+import { CardTypes } from "@/types/shirts-types";
 
 export const caps: CardTypes[] = [
   {

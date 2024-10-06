@@ -1,7 +1,7 @@
 import React from "react";
-import { BestSellingCard } from "./ui/best-selling-card";
-import { caps } from "../mockData/caps";
-import WordHoverAnimation from "./ui/word-hover-animation";
+import { BestSellingCard } from "./best-selling-card";
+import { caps } from "../../mockData/caps-data";
+import WordHoverAnimation from "../ui/word-hover-animation";
 
 export default function BestSellingProducts() {
 	return (

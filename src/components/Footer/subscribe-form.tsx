@@ -1,13 +1,9 @@
 "use client";
 import React from "react";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { subscribeFormSchema } from "@/types/subscribe-form-schema";
-
-import { Button } from "@/components/ui/button";
-
 import {
 	Form,
 	FormControl,
@@ -15,8 +11,8 @@ import {
 	FormItem,
 	FormMessage,
 } from "@/components/ui/form";
-import { Input } from "./input";
-import AnimatedButton from "./animated-button";
+import { Input } from "../ui/input";
+import AnimatedButton from "../Buttons/animated-button";
 
 export default function SubscribeForm() {
 	const form = useForm<z.infer<typeof subscribeFormSchema>>({
@@ -24,7 +20,8 @@ export default function SubscribeForm() {
 	});
 
 	function onSubmit(values: z.infer<typeof subscribeFormSchema>) {
-		// Do something with the form values.
+    // things will be done later
+    // to avoid eslint error console.log() is kept deliberately
 		console.log(values);
 	}
 	return (
