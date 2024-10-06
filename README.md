@@ -35,18 +35,20 @@ I focused on writing **clean**, **scalable**, and **organized** code by breaking
 
 - **Magnifying Lens Overflow**: The magnifying lens effect overflows on the right side of the hero slider image. This will be resolved in future updates.
 - **Hero Slider Speed Issue**: Occasionally, the speed of the hero slider decreases unexpectedly. I am working on fixing this.
+- **Image optimization Issue**:
+I could not perform manual image optimization, which is causing higher Largest Contentful Paint (LCP). I need more time to address this issue, but I can resolve it effectively.
 
 ## Setup and Installation
 
 1. Clone the repository (using SSH):
 
    ```bash
-   git@github.com:mashuk-tamim/vtmerch-genesys-task.git
+   git@github.com:mashuk-tamim/vtmerch-landing-page.git
    ```
 
 2. Navigate into the project directory:
    ```bash
-   cd vtmerch-genesys-task
+   cd vtmerch-landing-page
    ```
 3. Install dependencies:
    ```bash
@@ -73,15 +75,6 @@ I focused on writing **clean**, **scalable**, and **organized** code by breaking
 
 The project has been deployed on [Vercel](https://vercel.com/home). You can view the live version [here](https://vtmerch-eight.vercel.app/).
 
-## What I Did
-
-- Implemented **responsive design** for small to extra-large devices.
-- Added a **menu button animation** that appears from the right.
-- Created a **hero slider** with pause on hover functionality.
-- Integrated a **magnifying lens effect** on the hero section image.
-- Added **rotating animation on hover** for text and links.
-- Developed a **parallax scrolling effect** for the books section.
-- Built **animated buttons** with hover effects and a **magnetic effect** for social media links in the footer.
 
 ## Conclusion
 
