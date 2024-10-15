@@ -2,7 +2,7 @@
 
 ## About the Project
 
-This landing page was created as part of the task for the Junior Frontend Developer position at Genesys Softwares. The objective was to develop a landing page based on the provided Figma design, ensuring responsiveness across multiple devices and incorporating animations to enhance user experience.
+This landing page was created as part of a task for a Junior Frontend Developer position. The objective was to develop a landing page based on the provided Figma design, ensuring responsiveness across multiple devices and incorporating animations to enhance user experience.
 
 I focused on writing **clean**, **scalable**, and **organized** code by breaking the project down into modular components. While the scale of the project may be small, I took a **future-proofing** approach with scalability in mind. The project is responsive for small, medium, large, and extra-large devices, using **default Tailwind CSS breakpoints**. I also adhered to **color theory** principles and chose **red** as the primary theme color to align with the design.
 
@@ -35,8 +35,8 @@ I focused on writing **clean**, **scalable**, and **organized** code by breaking
 
 - **Magnifying Lens Overflow**: The magnifying lens effect overflows on the right side of the hero slider image. This will be resolved in future updates.
 - **Hero Slider Speed Issue**: Occasionally, the speed of the hero slider decreases unexpectedly. I am working on fixing this.
-- **Image optimization Issue**:
-I could not perform manual image optimization, which is causing higher Largest Contentful Paint (LCP). I need more time to address this issue, but I can resolve it effectively.
+- **Image optimization Issue**:  
+  I could not perform manual image optimization, which is causing higher Largest Contentful Paint (LCP). I need more time to address this issue, but I can resolve it effectively.
 
 ## Setup and Installation
 
