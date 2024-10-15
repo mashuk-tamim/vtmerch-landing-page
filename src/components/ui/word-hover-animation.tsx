@@ -17,7 +17,7 @@ export default function WordHoverAnimation({
 		<motion.div
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
-			className={`relative overflow-hidden ${
+			className={`relative inline-block pr-1 overflow-hidden ${
 				isHovered
 					? "text-red-primary font-outline-shadow"
 					: "font-outline-shadow text-grey-secondary"
@@ -26,8 +26,8 @@ export default function WordHoverAnimation({
 			<AnimatedWord
 				text={text}
 				animation={wordLetterAnimation}
-        isHovered={isHovered}
-        />
+				isHovered={isHovered}
+			/>
 			<div className="absolute top-0">
 				<AnimatedWord
 					text={text}

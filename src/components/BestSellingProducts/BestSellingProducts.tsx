@@ -9,13 +9,13 @@ export default function BestSellingProducts() {
 			<div className="">
 				<div className="">
 					<h1 className="uppercase text-2xl md:text-4xl lg:text-6xl text-black-secondary font-semibold font-montserrat">
-						Buy 1 Get 1 Free
-					</h1>
-					<h1 className="uppercase text-2xl md:text-4xl lg:text-6xl text-black-secondary font-semibold font-montserrat flex gap-4">
-						on
-						<WordHoverAnimation text={"BEST SELLING PRODUCTS"} />
+						Buy 1 Get 1 Free On
+						<span className="block md:inline">
+							<WordHoverAnimation text={"BEST SELLING PRODUCTS"} />
+						</span>
 					</h1>
 				</div>
+
 				<div className="pt-10">
 					<BestSellingCard items={caps} />
 				</div>
